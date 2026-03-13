@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Priyanshi</div>
+        <nav>
+            <ul>
+                <li onclick="document.querySelector('.hero-section').scrollIntoView({behavior:'smooth'})">Home</li>
+                <li onclick="document.querySelector('.about-section').scrollIntoView({behavior:'smooth'})">About</li>
+                <li onclick="document.querySelector('.projects-section').scrollIntoView({behavior:'smooth'})">Projects</li>
+                <li onclick="document.querySelector('.contact-section').scrollIntoView({behavior:'smooth'})">Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="bio">
+            <h1>Hi, I'm<br><em>Priyanshi</em></h1>
+            <p class="bio-desc">
+                A 2nd year <strong>CSE-AI</strong> undergraduate building at the intersection of
+                <strong>machine learning</strong>, <strong>neuroscience</strong>, and
+                <strong>production systems</strong> — from brain-signal decoders to deployed AI agents.
+            </p>
+            <div class="cta-row">
+                <button class="btn-primary" onclick="document.querySelector('.projects-section').scrollIntoView({behavior:'smooth'})">View Projects</button>
+                <a href="PriyanshiResume.pdf" class="btn-secondary" download="Priyanshi.pdf">Download CV</span>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- CURRENTLY -->
+    <div class="current-section">
+        <span class="current-label">Currently</span>
+        <div class="current-items">
+            <div class="current-item">
+                <div class="current-item-icon"><i class="fa-solid fa-atom"></i></div>
+                <div class="current-item-body">
+                    <div class="current-item-title">Research Intern — IIT Delhi</div>
+                    <div class="current-item-sub">EEG · Deep Learning · NLP · Hyperspace</div>
+                </div>
+            </div>
+            <div class="current-divider"></div>
+            <div class="current-item">
+                <div class="current-item-icon"><i class="fa-solid fa-hexagon-nodes"></i></div>
+                <div class="current-item-body">
+                    <div class="current-item-title">Building — AI UI Navigator</div>
+                    <div class="current-item-sub">Autonomous browser agent · Gemini · Playwright</div>
+                </div>
+            </div>
+            <div class="current-divider"></div>
+            <div class="current-item">
+                <div class="current-item-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                <div class="current-item-body">
+                    <div class="current-item-title">Learning — Transformers</div>
+                    <div class="current-item-sub">Attention is all you need · Research topics</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-section">
+        <div class="section-label"><span>01 — About</span></div>
+        <div class="about-inner">
+            <div class="about-heading-col">
+                <p class="num">Background</p>
+                <h2>Who<br><em>I am</em></h2>
+            </div>
+            <div class="about-body">
+                <p>
+                    I'm a Computer Science (AI) undergraduate with a deep interest in building systems that sit at the boundary of <strong>engineering and research</strong>. My work spans deployed ML inference services, agentic AI systems, and computational neuroscience simulations.
+                </p>
+                <p>
+                    Currently interning at <strong>IIT Delhi</strong> on EEG-based deep learning research, exploring information representation in hyperspace. I am aiming for research at the intersection of machine learning and neuroscience. 
+                </p>
+                <div class="skills-row">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">PyTorch</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">nODE.JS</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Google Cloud</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">MNE-Python</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Neuroscience</span>
+                    <span class="skill-tag">C/C++</span>
+                    <span class="skill-tag">Data Structures and Algorithms</span>
+                    <span class="skill-tag">Object Oriented Programming</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="section-label"><span>02 — Projects</span></div>
+
+        <!-- AI & ML -->
+        <div class="domain-group domain-mlai">
+            <div class="domain-header">
+                <span class="domain-dot"></span>
+                <span class="domain-name">AI &amp; Machine Learning</span>
+                <span class="domain-count">4 projects</span>
+            </div>
+            <div class="domain-cards">
+                <div class="project-card">
+                    <span class="project-badge">Current</span>
+                    <h3 class="project-title">AI UI Navigator</h3>
+                    <p class="project-desc">Autonomous browser agent that executes natural-language web tasks using Gemini multimodal reasoning, Playwright automation, an XVFB headless environment, and real-time WebSocket communication.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Gemini</span>
+                        <span class="tech-tag">Playwright</span>
+                        <span class="tech-tag">WebSockets</span>
+                        <span class="tech-tag">XVFB</span>
+                        <span class="tech-tag">Google Cloud</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/Iris"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Scientific Abstract Classifier</h3>
+                    <p class="project-desc">NLP system using Hugging Face transformer models to classify research abstracts by domain. Deployed as a FastAPI inference service with a clean REST API.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HuggingFace</span>
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/nlp_classifier"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Log Anomaly Detection</h3>
+                    <p class="project-desc">Isolation Forest–based pipeline for identifying irregular patterns in system logs, with an interactive Streamlit dashboard for real-time visualization and exploration.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Isolation Forest</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Streamlit</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/log_analyst"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Auto Dockerfile Generator</h3>
+                    <p class="project-desc">Developer tool that analyses a project's structure and dependencies, then generates production-ready Dockerfiles automatically using local LLM inference via Ollama — no manual config needed.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Ollama</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">LLM</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/auto_docker"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECURITY & CLOUD -->
+        <div class="domain-group domain-security">
+            <div class="domain-header">
+                <span class="domain-dot"></span>
+                <span class="domain-name">Security &amp; Cloud Systems</span>
+                <span class="domain-count">2 projects</span>
+            </div>
+            <div class="domain-cards">
+                <div class="project-card">
+                    <h3 class="project-title">CivicLens</h3>
+                    <p class="project-desc">AI-powered civic document validation system that detects cross-document inconsistencies and missing fields before government submission. Built on AWS Bedrock and S3 with a FastAPI backend and React frontend.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS Bedrock</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">S3</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/CivicLens"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                        <a class="proj-link" href="https://civiclens-frontend.s3-website.ap-south-1.amazonaws.com/">⟫ Live Demo</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Transformer-based WAF</h3>
+                    <p class="project-desc">Real-time malicious HTTP request detection using a transformer model integrated with Nginx. A FastAPI inference service sits between the proxy and classifier for low-latency threat identification.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Transformers</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Nginx</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/transformWAF"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FULL STACK -->
+        <div class="domain-group domain-fullstack">
+            <div class="domain-header">
+                <span class="domain-dot"></span>
+                <span class="domain-name">Full Stack</span>
+                <span class="domain-count">2 projects</span>
+            </div>
+            <div class="domain-cards">
+                <div class="project-card">
+                    <h3 class="project-title">ChemFlow</h3>
+                    <p class="project-desc">Multi-interface chemistry workflow platform with a Django REST backend, a React web application, and a PyQt5 desktop client — three different frontends sharing one core API.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PyQt5</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/ChemFlow"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Hospital Appointment System</h3>
+                    <p class="project-desc">MERN stack web application for scheduling and managing hospital visits, with patient and doctor dashboards, appointment slot management, and real-time status updates.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/pran"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMPUTATIONAL NEUROSCIENCE -->
+        <div class="domain-group domain-neuro">
+            <div class="domain-header">
+                <span class="domain-dot"></span>
+                <span class="domain-name">Computational Neuroscience</span>
+                <span class="domain-count">3 projects</span>
+            </div>
+            <div class="domain-cards">
+                <div class="project-card">
+                    <h3 class="project-title">EEG Preprocessing Pipeline</h3>
+                    <p class="project-desc">Signal processing workflow for EEG data cleaning and analysis — artifact rejection, bandpass filtering, epoch extraction, and feature preparation for downstream ML classifiers using MNE-Python.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">MNE-Python</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/EEGPreprocessing"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Neuron Model Simulations</h3>
+                    <p class="project-desc">From-scratch Python implementations of the Hodgkin–Huxley and Leaky Integrate-and-Fire neuron models, simulating action potential generation and membrane dynamics from differential equations.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/NeuroSimulations"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Ben-Yishai 1995 Reproduction</h3>
+                    <p class="project-desc">Numerical reproduction of the Ben-Yishai et al. 1995 ring attractor model, replicating orientation tuning curves in primary visual cortex as described in the original landmark paper.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a class="proj-link" href="https://github.com/Priyanshi585-na/BenYishai1995"><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact-section">
+        <div class="section-label" style="justify-content:center;"><span>03 — Contact</span></div>
+        <h2>Let's <em>connect</em></h2>
+        <p>Open to research collaborations, internships, and interesting conversations.</p>
+        <div class="contact-links">
+            <a href="mailto:priyanshi25xd@gmail.com" class="contact-link">Email</a>
+            <a class="contact-link" href="https://www.linkedin.com/in/priyanshi-a67870324/">LinkedIn</a>
+            <a class="contact-link" href="https://github.com/Priyanshi585-na">GitHub</a>
+        </div>
+    </section>
+
+    <footer class="footer-bar">
+        <p>© 2026 Priyanshi. All rights reserved.</p>
+        <p>Designed with intention.</p>
+    </footer>
+
+
+
+
+    <script src="https://kit.fontawesome.com/9a037b9bfa.js" crossorigin="anonymous"></script>
+</body>
+</html>
