@@ -28,7 +28,7 @@
         nav ul li:hover::after { width: 100%; }
 
         .hero-section {
-            min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;
+            display: grid; grid-template-columns: 1fr 1fr;
             align-items: center; padding: 100px 8vw 60px; position: relative; overflow: hidden;
         }
         .hero-section::before { content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(126,232,212,0.06) 0%, transparent 65%); pointer-events: none; }
@@ -184,12 +184,7 @@
             letter-spacing: 0.06em;
             margin-top: 2px;
         }
-        .current-divider {
-            width: 1px;
-            height: 40px;
-            background: var(--border);
-            flex-shrink: 0;
-        }
+
         .fa-solid{
             color: var(--accent)
         }
